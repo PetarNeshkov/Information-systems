@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9327C10B-48C9-450E-B304-4680FAE6A7FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Дървесина</RootNamespace>
+    <AssemblyName>Дървесина</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DurvesinaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DurvesinaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMClients.Designer.cs">
+      <DependentUpon>FMClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMEmployeescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMEmployeescs.Designer.cs">
+      <DependentUpon>FMEmployeescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMFaktura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMFaktura.Designer.cs">
+      <DependentUpon>FMFaktura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMFirms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMFirms.Designer.cs">
+      <DependentUpon>FMFirms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMObjects.Designer.cs">
+      <DependentUpon>FMObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMPrevozenBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMPrevozenBilet.Designer.cs">
+      <DependentUpon>FMPrevozenBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMVehicles.Designer.cs">
+      <DependentUpon>FMVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMWoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMWoods.Designer.cs">
+      <DependentUpon>FMWoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMZaqvkaZaPokupka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMZaqvkaZaPokupka.Designer.cs">
+      <DependentUpon>FMZaqvkaZaPokupka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMZaqvkaZaSech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMZaqvkaZaSech.Designer.cs">
+      <DependentUpon>FMZaqvkaZaSech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FMClients.resx">
+      <DependentUpon>FMClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMEmployeescs.resx">
+      <DependentUpon>FMEmployeescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMFaktura.resx">
+      <DependentUpon>FMFaktura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMFirms.resx">
+      <DependentUpon>FMFirms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMObjects.resx">
+      <DependentUpon>FMObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMPrevozenBilet.resx">
+      <DependentUpon>FMPrevozenBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMVehicles.resx">
+      <DependentUpon>FMVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMWoods.resx">
+      <DependentUpon>FMWoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMZaqvkaZaPokupka.resx">
+      <DependentUpon>FMZaqvkaZaPokupka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMZaqvkaZaSech.resx">
+      <DependentUpon>FMZaqvkaZaSech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DurvesinaDataSet.xsc">
+      <DependentUpon>DurvesinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DurvesinaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DurvesinaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DurvesinaDataSet.xss">
+      <DependentUpon>DurvesinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
